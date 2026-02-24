@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Noida, India',
+    value: 'Delhi NCR, India',
     href: null,
   },
   {
@@ -246,7 +246,7 @@ const ContactSection = () => {
             Let's Connect
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-            Open to <span className="text-accent font-medium">Data Analyst</span> and <span className="text-accent font-medium">BI Analyst</span> opportunities — let's discuss how I can add value to your team.
+            Open to <span className="text-accent font-medium">MIS Analyst, Data Analyst</span> and <span className="text-accent font-medium">BI Analyst</span> opportunities — let's discuss how I can add value to your team.
           </p>
         </motion.div>
 

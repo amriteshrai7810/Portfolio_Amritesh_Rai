@@ -4,19 +4,7 @@ import { useRef } from 'react';
 import { Briefcase, Calendar, Building2 } from 'lucide-react';
 
 const experienceData = [
-  {
-    role: 'Operations Data Analyst Intern',
-    company: 'Speed Force',
-    type: 'Internship',
-    duration: 'Jun 2023 – Nov 2023',
-    responsibilities: [
-      'Analyzed customer data, inventory data, and service records for Speed Force, a bike servicing startup, to optimize inventory and enhance service quality.',
-      'Analyzed inventory data using Python and Advanced Excel to identify high-demand parts and optimize stock planning.',
-      'Built a dashboard to prioritize essential inventory and reduce over-purchasing, contributing to an 8–10% increase in revenue.'
-    ],
-    tools: ['SQL', 'Excel', 'Power BI', 'Data Analysis'],
-  },
-  {
+   {
     role: 'Data Analyst',
     company: 'Independent Projects',
     type: 'Projects',
@@ -29,6 +17,18 @@ const experienceData = [
     ],
     tools: ['SQL', 'Python', 'Power BI', 'Excel', 'Pandas'],
   },
+  {
+    role: 'Operations Data Analyst Intern',
+    company: 'Speed Force',
+    type: 'Internship',
+    duration: 'Jun 2023 – Nov 2023',
+    responsibilities: [
+      'Analyzed customer data, inventory data, and service records for Speed Force, a bike servicing startup, to optimize inventory and enhance service quality.',
+      'Analyzed inventory data using Python and Advanced Excel to identify high-demand parts and optimize stock planning.',
+      'Built a dashboard to prioritize essential inventory and reduce over-purchasing, contributing to an 8–10% increase in revenue.'
+    ],
+    tools: ['SQL', 'Excel', 'Power BI', 'Data Analysis'],
+  }
 ];
 
 const ExperienceSection = () => {

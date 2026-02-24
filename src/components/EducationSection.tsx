@@ -9,7 +9,7 @@ const educationData = [
     degree: "Bachelor's Degree in Economics",
     institution: 'Jiwaji University',
     location: 'Gwalior, India',
-    duration: 'Jun 2019 – Jun 2022',
+    duration: 'Jun 2019 – Jan 2023',
     description: 'Developed strong analytical and quantitative skills with focus on economic data analysis and statistical methods.',
   },
   {
@@ -46,7 +46,7 @@ const certifications = [
     title: 'Financial Analysis and Modelling',
     issuer: 'IIMSkills',
     icon: '📊',
-    credentialUrl: 'https://lms.iimskills.in/certificates/a06e2edb56ef6c9f228ce2ff405f12e4/',
+    credentialUrl: 'https://lms.iimskills.in/certificates/d2751b0f9605ccb4c7af1bf71d490ce5/',
   }
 ];
 
