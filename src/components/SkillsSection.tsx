@@ -28,7 +28,7 @@ const skills: Skill[] = [
   { name: 'SQL', icon: Database, description: 'Joins, CTEs, subqueries, window functions & stored procedures', category: ['tools'] },
   { name: 'Advanced Excel', icon: FileSpreadsheet, description: 'Pivot tables, VLOOKUP, XLOOKUP, Power Query & macros', category: ['tools'] },
   { name: 'Power BI', icon: BarChart3, description: 'DAX, Power Query, interactive dashboards & data modeling', category: ['tools'] },
-  { name: 'Python', icon: Code, description: 'Pandas, NumPy, Matplotlib, Seaborn & automation scripts', category: ['tools'] },
+  { name: 'Python & ML', icon: Code, description: 'Pandas, NumPy, Matplotlib, Seaborn & Scikit Learn', category: ['tools'] },
   { name: 'Data Cleaning', icon: Sparkles, description: 'Handling nulls, duplicates, outliers & data standardization', category: ['skills'] },
   { name: 'EDA', icon: LineChart, description: 'Statistical analysis, trend detection & hypothesis testing', category: ['skills'] },
   { name: 'Data Visualization', icon: PieChart, description: 'Storytelling with charts, KPIs & executive dashboards', category: ['skills'] },

@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/atulkumar7810"
+              href="https://github.com/amriteshrai7810"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-accent transition-colors"
@@ -24,7 +24,7 @@ const Footer = () => {
               <Github className="w-4 h-4" />
             </a>
             <a
-              href="https://www.linkedin.com/in/atulkumar-s/"
+              href="https://www.linkedin.com/in/amritesh-rai/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-accent transition-colors"
@@ -33,7 +33,7 @@ const Footer = () => {
               <Linkedin className="w-4 h-4" />
             </a>
             <a
-              href="mailto:atulkumarsingh7810@gmail.com"
+              href="mailto:amriteshrai7810@gmail.com"
               className="p-2 text-muted-foreground hover:text-accent transition-colors"
               aria-label="Email"
             >

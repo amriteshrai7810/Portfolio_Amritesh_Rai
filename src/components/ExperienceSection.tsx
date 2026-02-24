@@ -5,15 +5,14 @@ import { Briefcase, Calendar, Building2 } from 'lucide-react';
 
 const experienceData = [
   {
-    role: 'Virtual Intern – Data Analytics',
-    company: 'Quantium',
+    role: 'Operations Data Analyst Intern',
+    company: 'Speed Force',
     type: 'Internship',
-    duration: 'Aug 2024 – Sep 2024',
+    duration: 'Jun 2023 – Nov 2023',
     responsibilities: [
-      'Analyzed 200K+ customer transaction records to identify purchasing patterns and segment high-value customers',
-      'Designed Power BI dashboards that reduced manual reporting time by streamlining weekly business reviews',
-      'Performed end-to-end data cleaning and validation, improving dataset accuracy for downstream analysis',
-      'Conducted uplift testing to measure campaign effectiveness, contributing to data-driven store layout recommendations',
+      'Analyzed customer data, inventory data, and service records for Speed Force, a bike servicing startup, to optimize inventory and enhance service quality.',
+      'Analyzed inventory data using Python and Advanced Excel to identify high-demand parts and optimize stock planning.',
+      'Built a dashboard to prioritize essential inventory and reduce over-purchasing, contributing to an 8–10% increase in revenue.'
     ],
     tools: ['SQL', 'Excel', 'Power BI', 'Data Analysis'],
   },

@@ -13,32 +13,32 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Location',
-    value: 'Hyderabad, India',
+    value: 'Noida, India',
     href: null,
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'atulkumarsingh7810@gmail.com',
-    href: 'mailto:atulkumarsingh7810@gmail.com',
+    value: 'amriteshrai7810@gmail.com',
+    href: 'mailto:amriteshrai7810@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 8074252857',
-    href: 'tel:+918074252857',
+    value: '+91 8602577355',
+    href: 'tel:+918602577355',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'atulkumar-s',
-    href: 'https://www.linkedin.com/in/atulkumar-s/',
+    value: 'amritesh-rai',
+    href: 'https://www.linkedin.com/in/amritesh-rai/',
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'atulkumar7810',
-    href: 'https://github.com/atulkumar7810',
+    value: 'amriteshrai7810',
+    href: 'https://github.com/amriteshrai7810',
   },
 ];
 
@@ -337,7 +337,7 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      placeholder="John Doe"
+                      placeholder="Name"
                       className={getInputClassName('name')}
                       aria-invalid={touched.name && !!errors.name}
                       aria-describedby={errors.name ? 'name-error' : undefined}
@@ -367,7 +367,7 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                      placeholder="john@example.com"
+                      placeholder="Name@example.com"
                       className={getInputClassName('email')}
                       aria-invalid={touched.email && !!errors.email}
                       aria-describedby={errors.email ? 'email-error' : undefined}

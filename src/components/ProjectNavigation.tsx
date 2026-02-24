@@ -65,7 +65,7 @@ const ProjectNavigation = () => {
               to="/"
               className="font-display text-xl md:text-2xl font-bold text-foreground relative group"
             >
-              ATUL<span className="text-accent">.</span>
+              Amritesh<span className="text-accent">.</span>
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300" />
             </Link>
           </div>
@@ -81,7 +81,7 @@ const ProjectNavigation = () => {
               {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </motion.button>
             <a
-              href="https://github.com/atulkumar7810"
+              href="https://github.com/amriteshrai7810"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-xl transition-colors"
@@ -89,7 +89,7 @@ const ProjectNavigation = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/atulkumar-s/"
+              href="https://www.linkedin.com/in/amritesh-rai"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-xl transition-colors"
@@ -158,7 +158,7 @@ const ProjectNavigation = () => {
               </div>
               <div className="flex items-center gap-3 pt-4 mt-4 border-t border-border">
                 <a
-                  href="https://github.com/atulkumar7810"
+                  href="https://github.com/amriteshrai7810"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-secondary hover:bg-secondary/80 rounded-xl transition-colors"
@@ -166,7 +166,7 @@ const ProjectNavigation = () => {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/atulkumar-s/"
+                  href="https://www.linkedin.com/in/amritesh-rai/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-secondary hover:bg-secondary/80 rounded-xl transition-colors"

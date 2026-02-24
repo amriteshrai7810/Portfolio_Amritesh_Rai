@@ -7,8 +7,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 const educationData = [
   {
     degree: "Bachelor's Degree in Economics",
-    institution: 'Osmania University',
-    location: 'Hyderabad, India',
+    institution: 'Jiwaji University',
+    location: 'Gwalior, India',
     duration: 'Jun 2019 – Jun 2022',
     description: 'Developed strong analytical and quantitative skills with focus on economic data analysis and statistical methods.',
   },
@@ -17,37 +17,37 @@ const educationData = [
     institution: 'Army Public School, Golconda',
     location: 'Hyderabad, India',
     duration: 'Jun 2017 – Jun 2019',
-    description: 'Completed higher secondary education with focus on Commerce and Mathematics.',
+    description: 'Completed higher secondary education with focus on Commerce and Business.',
   },
 ];
 
 const certifications = [
-  {
-    title: 'Google Data Analytics',
-    issuer: 'Coursera',
-    icon: '📊',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/professional-cert/F9MFBHMY6234',
+    {
+    title: 'Advanced Data Science and AI',
+    issuer: 'Skillslash Academy',
+    icon: '🤖',
+    credentialUrl: 'https://drive.google.com/file/d/1GX58dLR6uWHzeDt9XPORa8mCEvTgOMm-/view?usp=sharing',
+    certificateId: '',
+    hasCopyAction: true,
   },
   {
     title: 'Google Advanced Data Analytics',
     issuer: 'Coursera',
     icon: '📈',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/professional-cert/5N03NTKGEDD3',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/professional-cert/YUASVBFPIIH5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof',
   },
   {
     title: 'Microsoft Power BI Data Analyst',
     issuer: 'Coursera',
     icon: '📉',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/professional-cert/BMQ511WM3JM5',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/24YBNWJAJUMG',
   },
-  {
-    title: 'Advanced Data Science and AI',
-    issuer: 'Skillslash Academy',
-    icon: '🤖',
-    credentialUrl: 'https://skillslash.com/verify-certificate',
-    certificateId: '397kzwy2q6u',
-    hasCopyAction: true,
-  },
+    {
+    title: 'Financial Analysis and Modelling',
+    issuer: 'IIMSkills',
+    icon: '📊',
+    credentialUrl: 'https://lms.iimskills.in/certificates/a06e2edb56ef6c9f228ce2ff405f12e4/',
+  }
 ];
 
 const EducationSection = () => {

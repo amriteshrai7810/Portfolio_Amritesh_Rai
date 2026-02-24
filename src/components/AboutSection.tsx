@@ -7,12 +7,12 @@ const highlights = [
   {
     icon: GraduationCap,
     title: 'Education',
-    description: "Bachelor's Degree in Economics from Osmania University",
+    description: "Bachelor's Degree in Economics from Jiwaji University",
   },
   {
     icon: Briefcase,
     title: 'Experience',
-    description: 'Hands-on project experience across FMCG, Real Estate & Retail',
+    description: 'Hands-on project & internship experience across FMCG, Real Estate, Retail & Finance',
   },
 ];
 
@@ -33,11 +33,8 @@ const AboutSection = () => {
           <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
             About Me
           </span>
-          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Who I Am
-          </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
-            A results-driven analyst who turns raw data into clear, impactful business decisions
+           Data is the key to smarter decisions — let’s unlock its potential together.
           </p>
         </motion.div>
 
@@ -50,20 +47,20 @@ const AboutSection = () => {
           >
             <div className="relative mb-4 md:mb-6">
               <h3 className="font-display text-xl md:text-2xl lg:text-3xl font-bold text-foreground">
-                Analyst by Skill, Storyteller by Approach
+                My Story
               </h3>
               <div className="mt-2 w-16 h-1 bg-gradient-to-r from-accent to-primary rounded-full" />
             </div>
             
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-3">
-              I'm a Data Analyst with strong proficiency in SQL, Power BI, Advanced Excel, and Python. 
-              I specialize in transforming complex datasets into clean dashboards, automated reports, 
-              and strategic insights that help businesses make confident, data-backed decisions.
+              Being an economics student and a business enthusiast, I’ve always been curious about how organizations function behind the scenes. That curiosity led me to Excel, where I learned pivot tables, lookups, charts, and even macros and VBA.
             </p>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-              Currently seeking <span className="text-accent font-medium">Data Analyst / BI Analyst</span> opportunities 
-              where I can apply my analytical skills to solve real business problems and drive measurable outcomes.
-            </p>
+              As my interest grew, I began using Power BI and Tableau to present insights visually and break complex business questions into simple, actionable answers. To strengthen my foundation, I pursued a diploma in Data Science, building skills in statistics and machine learning.
+         </p>
+         <br />
+            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+              This curiosity-driven journey led me to pursue a career in data and business analytics. </p>
 
             {/* CTA */}
             <motion.div

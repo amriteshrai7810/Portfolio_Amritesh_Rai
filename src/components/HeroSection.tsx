@@ -37,7 +37,7 @@ const useTypingEffect = (text: string, speed: number = 50, delay: number = 500) 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { displayedText, isComplete } = useTypingEffect(
-    "Turning data into business insights.",
+    "Helping you understand what your data is really saying.",
     60,
     800
   );
@@ -64,40 +64,38 @@ const HeroSection = () => {
             <div className="relative z-10">
               {/* Name */}
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3">
-                Atul Kumar
+                Amritesh Rai
               </h1>
 
               {/* Role */}
               <div className="flex items-center gap-2 text-accent font-medium text-lg mb-2">
                 <Briefcase className="w-5 h-5" />
-                <span>Data Analyst | BI Analyst</span>
+                <span>MIS | Business Analyst | Data Analyst</span>
+
               </div>
 
               {/* Location */}
               <div className="flex items-center gap-1.5 text-muted-foreground text-sm mb-5">
                 <MapPin className="w-4 h-4" />
-                <span>India</span>
+                <span>Delhi NCR</span>
               </div>
-
+ 
               {/* Tagline with typing effect */}
               <div className="relative mb-6">
                 <div className="w-12 h-0.5 bg-gradient-to-r from-accent to-transparent mb-4" />
-                <p className="text-accent text-lg md:text-xl font-medium mb-4 min-h-[2rem]">
+                <p className="text-accent text-base md:text-lg font-medium mb-4 min-h-[2rem]">
                   "{displayedText}
                   <span className={`inline-block w-0.5 h-5 bg-accent ml-1 ${isComplete ? 'opacity-0' : 'animate-pulse'}`} />
                   "
                 </p>
                 <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-lg">
-                  Data Analyst with hands-on expertise in SQL, Power BI, Excel, and Python — backed by 
-                  multiple real-world analytics projects across FMCG, Retail, Real Estate, and Transportation. 
-                  I deliver actionable insights through clean analysis, interactive dashboards, and data-driven storytelling.
-                </p>
+                  Microsoft and Google-certified Data Analyst with 1+ years of internship and project experience</p>
               </div>
 
               {/* Social Links */}
               <div className="flex gap-3 mb-6">
                 <motion.a 
-                  href="https://github.com/atulkumar7810" 
+                  href="https://github.com/amriteshrai7810" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-xl bg-secondary hover:bg-accent/20 border border-border hover:border-accent/40 transition-all duration-300"
@@ -107,7 +105,7 @@ const HeroSection = () => {
                   <Github className="w-5 h-5 text-foreground" />
                 </motion.a>
                 <motion.a 
-                  href="https://www.linkedin.com/in/atulkumar-s/" 
+                  href="https://www.linkedin.com/in/amritesh-rai/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-xl bg-secondary hover:bg-accent/20 border border-border hover:border-accent/40 transition-all duration-300"
