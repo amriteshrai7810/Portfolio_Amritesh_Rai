@@ -141,7 +141,7 @@ export const projects: Project[] = [
       'Recommended societies using landmarks and apartment similarities',
       'Deployed Streamlit dashboard on Amazon EC2 for real-time use'
     ],
-    conclusion: ['• Enabled smarter property buying decisions with AI-powered insights.','• Enabled smarter property buying decisions with AI-powered insights; dashboard reduces search time by 30% by automatically surfacing nearby properties by location, type, and key filters for faster, informed buyer and investor decisions.'],
+    conclusion: ['• Enabled smarter property buying decisions with AI-powered insights; dashboard reduces search time by 30% by automatically surfacing nearby properties by location, type, and key filters for faster, informed buyer and investor decisions.'],
     github: 'https://github.com/amriteshrai7810/Gurgaon-Real-Estate-Analysis',
     demo: 'https://gurgaonhousingmarketanalysis-lrucnaqwthf3lrubhanwxa.streamlit.app/',
     powerBiEmbed: null,
