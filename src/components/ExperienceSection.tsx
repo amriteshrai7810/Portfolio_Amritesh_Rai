@@ -1,10 +1,19 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Briefcase, Calendar, Building2 } from 'lucide-react';
+import { Briefcase, Calendar, Building2, Award } from 'lucide-react';
 
-const experienceData = [
-   {
+interface Experience {
+  role: string;
+  company: string;
+  type: string;
+  duration: string;
+  responsibilities: string[];
+  tools: string[];
+  certificate?: string;
+}
+
+const experienceData: Experience[] = [
+  {
     role: 'Data Analyst',
     company: 'Independent Projects',
     type: 'Projects',
@@ -22,13 +31,15 @@ const experienceData = [
     company: 'Speed Force',
     type: 'Internship',
     duration: 'Jun 2023 – Nov 2023',
+    certificate:
+      'https://drive.google.com/file/d/1rod1P8B7tS-IxDh6sGDwAuvM9pnb7ezE/preview',
     responsibilities: [
       'Analyzed customer data, inventory data, and service records for Speed Force, a bike servicing startup, to optimize inventory and enhance service quality.',
       'Analyzed inventory data using Python and Advanced Excel to identify high-demand parts and optimize stock planning.',
-      'Built a dashboard to prioritize essential inventory and reduce over-purchasing, contributing to an 8–10% increase in revenue.'
+      'Built a dashboard to prioritize essential inventory and reduce over-purchasing, contributing to an 8–10% increase in revenue.',
     ],
     tools: ['SQL', 'Excel', 'Power BI', 'Data Analysis'],
-  }
+  },
 ];
 
 const ExperienceSection = () => {
@@ -38,7 +49,6 @@ const ExperienceSection = () => {
   return (
     <section id="experience" className="section-padding bg-secondary/30" ref={ref}>
       <div className="container-custom">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -56,9 +66,7 @@ const ExperienceSection = () => {
           </p>
         </motion.div>
 
-        {/* Experience Timeline */}
         <div className="relative max-w-4xl mx-auto">
-          {/* Timeline line - hidden on mobile, visible on md+ */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-accent/50 to-transparent -translate-x-1/2" />
 
           <div className="space-y-8 md:space-y-12">
@@ -72,15 +80,13 @@ const ExperienceSection = () => {
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
-                {/* Timeline dot - centered on md+ */}
                 <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-14 h-14 bg-background border-2 border-accent rounded-full items-center justify-center z-10 shadow-lg shadow-accent/20">
                   <Briefcase className="w-6 h-6 text-accent" />
                 </div>
 
-                {/* Content Card */}
                 <div className={`w-full md:w-[calc(50%-3rem)] ${index % 2 === 0 ? 'md:pr-4' : 'md:pl-4'}`}>
                   <div className="card-elevated p-6 rounded-xl group hover:shadow-xl hover:border-accent/30 transition-all duration-300 hover:-translate-y-1">
-                    {/* Header */}
+
                     <div className="flex items-start gap-4 mb-4">
                       <div className="md:hidden w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center shrink-0">
                         <Briefcase className="w-5 h-5 text-accent" />
@@ -107,7 +113,6 @@ const ExperienceSection = () => {
                       </div>
                     </div>
 
-                    {/* Responsibilities */}
                     <ul className="space-y-2 mb-4">
                       {exp.responsibilities.map((resp, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -117,7 +122,6 @@ const ExperienceSection = () => {
                       ))}
                     </ul>
 
-                    {/* Tools/Skills Tags */}
                     <div className="flex flex-wrap gap-2">
                       {exp.tools.map((tool) => (
                         <span
@@ -128,41 +132,28 @@ const ExperienceSection = () => {
                         </span>
                       ))}
                     </div>
+
+                    {/* Certificate Button */}
+                    {exp.certificate && (
+                      <a
+                        href={exp.certificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition"
+                      >
+                        <Award className="w-4 h-4" />
+                        View Certificate
+                      </a>
+                    )}
+
                   </div>
                 </div>
 
-                {/* Spacer for alternating layout */}
                 <div className="hidden md:block w-[calc(50%-3rem)]" />
               </motion.div>
             ))}
           </div>
         </div>
-
-        {/* Additional CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8 }}
-          className="mt-12 md:mt-16 text-center"
-        >
-          <p className="text-sm md:text-base text-muted-foreground mb-4">
-            Interested in my work? Check out my projects or get in touch!
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-            <a
-              href="#projects"
-              className="px-5 py-2.5 md:px-6 md:py-2.5 bg-accent text-accent-foreground font-medium rounded-lg hover:bg-accent/90 transition-colors text-sm md:text-base min-h-[44px] flex items-center"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="px-5 py-2.5 md:px-6 md:py-2.5 border border-accent/30 text-foreground font-medium rounded-lg hover:bg-accent/10 transition-colors text-sm md:text-base min-h-[44px] flex items-center"
-            >
-              Contact Me
-            </a>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

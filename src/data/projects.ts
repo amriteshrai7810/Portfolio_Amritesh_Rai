@@ -141,7 +141,7 @@ export const projects: Project[] = [
       'Recommended societies using landmarks and apartment similarities',
       'Deployed Streamlit dashboard on Amazon EC2 for real-time use'
     ],
-    conclusion: ['• Enabled smarter property buying decisions with AI-powered insights.'],
+    conclusion: ['• Enabled smarter property buying decisions with AI-powered insights.','• Enabled smarter property buying decisions with AI-powered insights; dashboard reduces search time by 30% by automatically surfacing nearby properties by location, type, and key filters for faster, informed buyer and investor decisions.'],
     github: 'https://github.com/amriteshrai7810/Gurgaon-Real-Estate-Analysis',
     demo: 'https://gurgaonhousingmarketanalysis-lrucnaqwthf3lrubhanwxa.streamlit.app/',
     powerBiEmbed: null,
@@ -181,13 +181,13 @@ export const projects: Project[] = [
       'Calculated correlations between churn and key variables',
       ' Built interactive visuals showing churn trends and reasons'
     ],
-    conclusion: ['• This analysis provides critical insights into customer churn patterns for Databel. By addressing high-churn customer segments and improving customer service quality, Databel can reduce churn rates and enhance customer satisfaction.'],
+    conclusion: ['• This analysis provides critical insights into customer churn patterns for Databel. By addressing high-churn customer segments and improving customer service quality, Databel can reduce churn rates and enhance customer satisfaction.',],
     github: "https://github.com/amriteshrai7810/Databel_Churn_Analysis",
     demo: '/project/business-insight-360',
     powerBiEmbed: "https://1drv.ms/x/c/f7b6f4461d511de9/IQSU2yI9eMzEQKKJoyQoeAA_AcjL4WQAllD4SD7c2sbWxUw",
     images: [],
     featured: true,
-    showCode: false,
+    showCode: true,
     pdf:"https://drive.google.com/file/d/1dg_rNr7YauSv7ZZpdl1cDh5eLcABPujW/preview"
   },
 
