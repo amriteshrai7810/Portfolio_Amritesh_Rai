@@ -35,9 +35,9 @@ export const projects: Project[] = [
       'Created custom DAX measures for advanced analysis.'
         ],
     insights: [
-      '• Given the persistent low Line Fill Rate, delivery delays, and supply chain inefficiencies, there is a high risk that Lotus Mart, Cool Blue, and Acclaimed Store may choose not to renew their contracts.',
-      '• OT, IF, and OTIF consistently miss targets on both daily and monthly levels, pointing to forecasting issues, inventory shortages, or procurement delays.',
-      '• Lotus Mart, Cool Blue, and Acclaimed Store struggle with low Line Fill Rate (LIFR) and frequent delays due to poor inventory management and supply shortages.'
+      'Given the persistent low Line Fill Rate, delivery delays, and supply chain inefficiencies, there is a high risk that Lotus Mart, Cool Blue, and Acclaimed Store may choose not to renew their contracts.',
+      'OT, IF, and OTIF consistently miss targets on both daily and monthly levels, pointing to forecasting issues, inventory shortages, or procurement delays.',
+      'Lotus Mart, Cool Blue, and Acclaimed Store struggle with low Line Fill Rate (LIFR) and frequent delays due to poor inventory management and supply shortages.'
     ],
     approach: [
       'Understood business issues and reviewed supply chain datasets.',
@@ -46,8 +46,8 @@ export const projects: Project[] = [
       'Built dynamic dashboards with drill-down and trend tracking.',
       'Delivered executive report with insights and recommendations.'
     ],
-    conclusion:['Improve Logistics & Lead Time Management: Optimize order processing, warehouse operations, and transportation planning to reduce delays. Implement real-time tracking and collaborate with reliable logistics partners for faster deliveries.',
-      'Optimize Inventory Management: Improve demand forecasting and stock replenishment to reduce shortages and delays.','Diversify Supplier Base: Onboard multiple vendors for critical items to mitigate supply risks, ensure consistent stock availability, and improve Line Fill Rate (LIFR).'
+    conclusion:['• Improve Logistics & Lead Time Management: Optimize order processing, warehouse operations, and transportation planning to reduce delays. Implement real-time tracking and collaborate with reliable logistics partners for faster deliveries.',
+      '• Optimize Inventory Management: Improve demand forecasting and stock replenishment to reduce shortages and delays.','• Diversify Supplier Base: Onboard multiple vendors for critical items to mitigate supply risks, ensure consistent stock availability, and improve Line Fill Rate (LIFR).'
     ],
     github: 'https://github.com/amriteshrai7810/Supply-Chain-Analysis',
     demo: '/project/atliq-mart-analysis',
@@ -95,9 +95,9 @@ export const projects: Project[] = [
   ],
 
   conclusion: [
-    'Quality of Service: Introduce structured driver training and performance-based incentives linked to customer ratings to improve service quality and increase repeat passenger rates.',
-    'Socioeconomic & Pricing Strategy: Offer bikes, cabs, and rickshaws in Tier 2 cities to cater to the large middle-class population with flexible pricing and greater convenience.', 
-    'Customer Loyalty & Retention: Implement personalized services, loyalty programs, and amenities such as air-conditioning, seamless booking, and in-vehicle charging to enhance customer satisfaction and drive repeat business.'
+    '• Quality of Service: Introduce structured driver training and performance-based incentives linked to customer ratings to improve service quality and increase repeat passenger rates.',
+    '• Socioeconomic & Pricing Strategy: Offer bikes, cabs, and rickshaws in Tier 2 cities to cater to the large middle-class population with flexible pricing and greater convenience.', 
+    '• Customer Loyalty & Retention: Implement personalized services, loyalty programs, and amenities such as air-conditioning, seamless booking, and in-vehicle charging to enhance customer satisfaction and drive repeat business.'
   ],
 
   github: 'https://github.com/amriteshrai7810/GoodCabs-Analysis',
@@ -127,11 +127,11 @@ export const projects: Project[] = [
       'Deployed live Streamlit app'
     ],
     insights: [
-      '• Identified pricing patterns across 3,800+ property listings',
-      '• Revealed area-wise price trends and flat distribution insights',
-      '• Predicted property prices using Random Forest modeling',
-      '• Recommended societies based on proximity to key locations',
-      '• Enabled dynamic data collection for continuous market insights'
+      'Identified pricing patterns across 3,800+ property listings',
+      'Revealed area-wise price trends and flat distribution insights',
+      'Predicted property prices using Random Forest modeling',
+      'Recommended societies based on proximity to key locations',
+      'Enabled dynamic data collection for continuous market insights'
     ],
     approach: [
       'Scraped 3,800+ listings from 99acres and MagicBricks',
@@ -141,7 +141,7 @@ export const projects: Project[] = [
       'Recommended societies using landmarks and apartment similarities',
       'Deployed Streamlit dashboard on Amazon EC2 for real-time use'
     ],
-    conclusion: ['Enabled smarter property buying decisions with AI-powered insights.'],
+    conclusion: ['• Enabled smarter property buying decisions with AI-powered insights.'],
     github: 'https://github.com/amriteshrai7810/Gurgaon-Real-Estate-Analysis',
     demo: 'https://gurgaonhousingmarketanalysis-lrucnaqwthf3lrubhanwxa.streamlit.app/',
     powerBiEmbed: null,
@@ -181,7 +181,7 @@ export const projects: Project[] = [
       'Calculated correlations between churn and key variables',
       ' Built interactive visuals showing churn trends and reasons'
     ],
-    conclusion: ['This analysis provides critical insights into customer churn patterns for Databel. By addressing high-churn customer segments and improving customer service quality, Databel can reduce churn rates and enhance customer satisfaction.'],
+    conclusion: ['• This analysis provides critical insights into customer churn patterns for Databel. By addressing high-churn customer segments and improving customer service quality, Databel can reduce churn rates and enhance customer satisfaction.'],
     github: "https://github.com/amriteshrai7810/Databel_Churn_Analysis",
     demo: '/project/business-insight-360',
     powerBiEmbed: "https://1drv.ms/x/c/f7b6f4461d511de9/IQSU2yI9eMzEQKKJoyQoeAA_AcjL4WQAllD4SD7c2sbWxUw",
