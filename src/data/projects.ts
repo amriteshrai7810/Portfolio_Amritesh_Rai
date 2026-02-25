@@ -184,7 +184,7 @@ export const projects: Project[] = [
     conclusion: ['• This analysis provides critical insights into customer churn patterns for Databel. By addressing high-churn customer segments and improving customer service quality, Databel can reduce churn rates and enhance customer satisfaction.',],
     github: "https://github.com/amriteshrai7810/Databel_Churn_Analysis",
     demo: '/project/business-insight-360',
-    powerBiEmbed: "https://1drv.ms/x/c/f7b6f4461d511de9/IQSU2yI9eMzEQKKJoyQoeAA_AcjL4WQAllD4SD7c2sbWxUw",
+    powerBiEmbed: "https://1drv.ms/x/c/f7b6f4461d511de9/IQSU2yI9eMzEQKKJoyQoeAA_AcjL4WQAllD4SD7c2sbWxUw?wdAllowInteractivity=False&wdHideGridlines=True&wdZoom=35",
     images: [],
     featured: true,
     showCode: true,
