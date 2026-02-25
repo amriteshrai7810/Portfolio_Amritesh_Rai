@@ -116,27 +116,40 @@ const ProjectDetail = () => {
           </div>
         </section>
 
-        {/* Power BI Section */}
+        {/* Power BI / Excel Section */}
         {project.powerBiEmbed && (
           <section className="py-12 md:py-16 bg-secondary/30">
-            <div className="container-custom">
+            <div className="container-custom overflow-x-hidden">
               <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
                 <FileText className="w-7 h-7 text-accent" />
                 Interactive Dashboard
               </h2>
 
-              <div className="rounded-2xl overflow-hidden border border-border shadow-xl bg-card">
+              <div className="rounded-2xl overflow-hidden border border-border shadow-xl bg-card flex justify-center">
+
+                {/* ✅ Excel Embed FIXED SCALE */}
                 {project.powerBiEmbed?.includes("1drv.ms") ? (
-                  <div className="flex justify-center">
-                    <iframe
-                      title={`${project.title} Excel Embed`}
-                      src={project.powerBiEmbed}
-                      className="w-[900px]"
-                      style={{ height: "680px" }}
-                      allowFullScreen
-                    />
+                  <div className="w-full flex justify-center overflow-hidden">
+                    <div
+                      style={{
+                        transform: "scale(0.9)",
+                        transformOrigin: "top center",
+                        width: "1100px",
+                        height: "760px",
+                      }}
+                    >
+                      <iframe
+                        title={`${project.title} Excel Embed`}
+                        src={project.powerBiEmbed}
+                        width="1100"
+                        height="760"
+                        style={{ border: "none" }}
+                        allowFullScreen
+                      />
+                    </div>
                   </div>
                 ) : (
+                  /* Power BI Embed */
                   <iframe
                     title={`${project.title} Power BI Report`}
                     src={project.powerBiEmbed}
@@ -194,9 +207,8 @@ const ProjectDetail = () => {
         {/* Outcomes + Approach */}
         <section className="py-12 md:py-16">
           <div className="container-custom grid lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Key Outcomes */}
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
-              <h2 className="font-display text-xl md:text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
+              <h2 className="font-display text-xl md:text-2xl font-bold mb-6 flex items-center gap-3">
                 <Target className="w-6 h-6 text-accent" />
                 Key Outcomes
               </h2>
@@ -204,16 +216,15 @@ const ProjectDetail = () => {
               <ul className="space-y-4">
                 {project.outcomes.map((outcome, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-accent mt-0.5" />
                     <span className="text-muted-foreground">{outcome}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Approach */}
             <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-lg">
-              <h2 className="font-display text-xl md:text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
+              <h2 className="font-display text-xl md:text-2xl font-bold mb-6 flex items-center gap-3">
                 <FileText className="w-6 h-6 text-accent" />
                 Approach
               </h2>
@@ -221,7 +232,7 @@ const ProjectDetail = () => {
               <ul className="space-y-4">
                 {project.approach.map((step, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="w-6 h-6 rounded-full bg-accent/10 text-accent text-sm font-bold flex items-center justify-center shrink-0">
+                    <span className="w-6 h-6 rounded-full bg-accent/10 text-accent text-sm font-bold flex items-center justify-center">
                       {index + 1}
                     </span>
                     <span className="text-muted-foreground">{step}</span>
@@ -232,58 +243,8 @@ const ProjectDetail = () => {
           </div>
         </section>
 
-        {/* Key Insights */}
-        {project.insights?.length > 0 && (
-          <section className="py-16 md:py-20 bg-secondary/30">
-            <div className="container-custom">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10 flex items-center gap-3">
-                <Lightbulb className="w-7 h-7 text-accent" />
-                Key Insights
-              </h2>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {project.insights.map((insight, index) => (
-                  <div
-                    key={index}
-                    className="bg-card border border-border rounded-2xl p-6 shadow-lg hover:shadow-xl transition"
-                  >
-                    <p className="text-muted-foreground leading-relaxed text-lg">
-                      <span className="text-accent font-bold mr-2">•</span>
-                      {insight}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Conclusion */}
-        {project.conclusion?.length > 0 && (
-          <section className="py-16 md:py-20">
-            <div className="container-custom">
-              <div className="bg-gradient-to-br from-accent/10 via-accent/5 to-transparent border border-border rounded-2xl p-10 md:p-14 shadow-xl">
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-10 text-center">
-                  Conclusion & Recommendations
-                </h2>
-
-                <div className="space-y-6 max-w-4xl mx-auto">
-                  {project.conclusion.map((point, index) => (
-                    <p
-                      key={index}
-                      className="text-muted-foreground leading-relaxed text-lg"
-                    >
-                      {point}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
+        <Footer />
       </main>
-
-      <Footer />
     </div>
   );
 };
