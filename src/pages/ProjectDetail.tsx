@@ -131,7 +131,7 @@ const ProjectDetail = () => {
                     <iframe
                       title={`${project.title} Excel Embed`}
                       src={project.powerBiEmbed}
-                      className="w-[930px]"
+                      className="w-[900px]"
                       style={{ height: "680px" }}
                       allowFullScreen
                     />
